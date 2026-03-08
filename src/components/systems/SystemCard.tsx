@@ -6,6 +6,24 @@ import { fadeInUp } from "@/lib/animations";
 import { TechnicalDetails } from "./TechnicalDetails";
 import type { Project } from "@/types";
 
+function highlightText(text: string, highlights: string[]) {
+  if (!highlights.length) return text;
+  const pattern = highlights
+    .map((h) => h.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+    .join("|");
+  const regex = new RegExp(`(${pattern})`, "gi");
+  const parts = text.split(regex);
+  return parts.map((part, i) =>
+    regex.test(part) ? (
+      <span key={i} className="font-medium text-accent">
+        {part}
+      </span>
+    ) : (
+      part
+    )
+  );
+}
+
 export function SystemCard({ project }: { project: Project }) {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
@@ -34,7 +52,7 @@ export function SystemCard({ project }: { project: Project }) {
             key={i}
             className="text-sm leading-relaxed text-text-secondary md:text-base"
           >
-            {paragraph}
+            {highlightText(paragraph, project.highlights ?? [])}
           </p>
         ))}
       </div>

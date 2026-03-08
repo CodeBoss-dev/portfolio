@@ -4,6 +4,7 @@ export interface Project {
   title: string;
   summary: string;
   narrative: string;
+  highlights?: string[];
   metrics: Metric[];
   technicalDetails: TechnicalDetails;
 }

@@ -13,6 +13,12 @@ export const projects: Project[] = [
 The problem was not any single piece -- it was the way the whole system was designed. It had been built to be accurate, not fast. So the entire approach was redesigned around smarter ways of storing and recalling information, so that frequently-needed answers were ready before they were even asked for, and results started arriving before the full search was complete.
 
 The result was a 99.96% reduction in wait times. Operations that previously took seconds now resolved almost instantly -- a 2,600 to 3,100x improvement that fundamentally changed what was possible for every system built on top of it.`,
+    highlights: [
+      "99.96% reduction in wait times",
+      "2,600 to 3,100x improvement",
+      "weakest link",
+      "seconds to near-instant",
+    ],
     metrics: [
       { value: "99.96%", label: "Faster" },
       { value: "3,100x", label: "Speed Improvement" },
@@ -47,6 +53,12 @@ The result was a 99.96% reduction in wait times. Operations that previously took
 The solution was not to use cheaper AI. It was to make the system dramatically smarter about what work was actually worth doing. A layer was built that could recognize when a new request was essentially the same as one already answered -- not just identical wording, but the same meaning. Another layer filtered out inputs that were unlikely to produce useful results before they ever reached the AI. And a memory system stored not just answers, but the thinking behind them, so similar future questions could be handled instantly.
 
 Costs dropped by 92 to 98%. The system became not just cheaper to run, but more thoughtful about what deserved its attention in the first place.`,
+    highlights: [
+      "92 to 98%",
+      "not the AI itself -- it was waste",
+      "not just cheaper to run",
+      "85-95% accuracy",
+    ],
     metrics: [
       { value: "92-98%", label: "Cost Savings" },
       { value: "85-95%", label: "Junk Filtered Out" },
@@ -81,6 +93,12 @@ Costs dropped by 92 to 98%. The system became not just cheaper to run, but more 
 The solution was to give the agents a shared memory -- a central place where, when one agent learned something, every other agent could instantly access that knowledge. Combined with a smarter system for dividing up work so no two agents were ever assigned the same task, the whole operation went from wasteful repetition to coordinated teamwork.
 
 Efficiency improved by 1,000 to 1,500x. Not because the agents got smarter, but because the system around them stopped wasting their intelligence.`,
+    highlights: [
+      "1,000 to 1,500x",
+      "same work over and over",
+      "shared memory",
+      "coordinated teamwork",
+    ],
     metrics: [
       { value: "1,500x", label: "Efficiency Improvement" },
       { value: "0%", label: "Repeated Work" },
@@ -117,6 +135,12 @@ Efficiency improved by 1,000 to 1,500x. Not because the agents got smarter, but 
 The system that replaced this was designed to react automatically. Data arriving from any source triggered a chain of automated checks, transformations, and routing decisions. Each step was visible, each decision was logged, and the system could self-correct when it encountered data that didn't match expected patterns.
 
 What had been a multi-day manual process became something that happened in minutes, with higher accuracy and a complete record of every action taken.`,
+    highlights: [
+      "happened in minutes",
+      "multi-day manual process",
+      "higher accuracy",
+      "complete record",
+    ],
     metrics: [
       { value: "Minutes", label: "Instead of Days" },
       { value: "99.8%", label: "Accuracy" },
@@ -151,6 +175,12 @@ What had been a multi-day manual process became something that happened in minut
 The challenge was building a system that could tell the difference. It assigns a confidence level to every decision it makes. When it's confident, it proceeds automatically. When it's not sure, it routes the decision to a human reviewer with all the relevant context pre-assembled, so the review takes seconds instead of minutes.
 
 The result was a 10x increase in how many decisions could be made per day, with the humans on the team spending their time on the genuinely difficult cases -- the ones where their judgment actually mattered.`,
+    highlights: [
+      "10x increase",
+      "tell the difference",
+      "seconds instead of minutes",
+      "judgment actually mattered",
+    ],
     metrics: [
       { value: "10x", label: "Faster Decisions" },
       { value: "97%", label: "Automated Accuracy" },
@@ -187,6 +217,12 @@ The result was a 10x increase in how many decisions could be made per day, with 
 The work here was about building a safety net between Claude and the rest of the system. Every output is checked against a defined format. If something doesn't match, the system automatically asks Claude to fix the specific issue. And if that still doesn't work, a series of fallbacks kick in to ensure the output always arrives correctly.
 
 The result was 99.9% format compliance. The systems downstream could trust that what arrived from the AI would always be exactly what they expected -- no exceptions, no manual cleanup needed.`,
+    highlights: [
+      "99.9% format compliance",
+      "safety net",
+      "no exceptions",
+      "no manual cleanup needed",
+    ],
     metrics: [
       { value: "99.9%", label: "Format Accuracy" },
       { value: "< 50ms", label: "Check Time" },
@@ -221,6 +257,12 @@ The result was 99.9% format compliance. The systems downstream could trust that 
 The solution was a smart memory system. Recent exchanges stay in full detail. Older exchanges get compressed into concise summaries that preserve the essential facts and decisions while using far less memory. The compression is context-aware -- it knows which details the current conversation is likely to need.
 
 The result: coherent, contextual conversations that span 100+ turns without losing track of important details or contradicting earlier statements.`,
+    highlights: [
+      "100+ turns",
+      "without forgetting",
+      "without contradicting",
+      "smart memory system",
+    ],
     metrics: [
       { value: "100+", label: "Turns Without Forgetting" },
       { value: "85%", label: "Memory Savings" },
@@ -257,6 +299,12 @@ The result: coherent, contextual conversations that span 100+ turns without losi
 The fix wasn't choosing between two different search methods. It was using both. One approach excels at understanding meaning and intent. The other excels at finding specific words and phrases. A smart ranking layer sits on top, scoring the combined results for how well they actually answer the original question.
 
 The combined approach improved search accuracy by 40% -- which in practice meant the difference between finding what you need immediately and spending minutes scrolling through almost-right results.`,
+    highlights: [
+      "40%",
+      "right neighborhood but didn't actually answer",
+      "smart ranking layer",
+      "finding what you need immediately",
+    ],
     metrics: [
       { value: "40%", label: "Better Search Results" },
       { value: "Hybrid", label: "Dual Search Approach" },
@@ -291,6 +339,12 @@ The combined approach improved search accuracy by 40% -- which in practice meant
 The solution was making the knowledge base alive. A monitoring system watches source documents and identifies not just what changed, but whether the change actually matters. Minor formatting edits don't trigger an update. Meaningful content changes do -- and only the affected portions get refreshed, not the entire collection.
 
 The result is a knowledge base that's always current, updating itself continuously without the cost of starting over. People can trust that what the system tells them reflects the latest information available.`,
+    highlights: [
+      "always current",
+      "expiration date",
+      "whether the change actually matters",
+      "cost of starting over",
+    ],
     metrics: [
       { value: "Always", label: "Up to Date" },
       { value: "95%", label: "Update Cost Saved" },
