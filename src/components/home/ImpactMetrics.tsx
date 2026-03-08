@@ -5,9 +5,9 @@ import { motion, useInView } from "framer-motion";
 import { SectionContainer } from "@/components/layout/SectionContainer";
 
 const metrics = [
-  { value: "99.96%", label: "Latency Reduction", detail: "Sub-millisecond retrieval" },
-  { value: "98%", label: "Cost Eliminated", detail: "Token optimization at scale" },
-  { value: "1,500x", label: "Efficiency Gain", detail: "Agent intelligence multiplied" },
+  { value: "99.96%", label: "Faster Response Times", detail: "From seconds of waiting to instant results" },
+  { value: "98%", label: "Lower AI Operating Costs", detail: "Same intelligence, a fraction of the spend" },
+  { value: "1,500x", label: "More Done, Less Waste", detail: "Systems that work together instead of repeating each other" },
 ];
 
 export function ImpactMetrics() {
