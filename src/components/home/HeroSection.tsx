@@ -60,8 +60,8 @@ export function HeroSection() {
             </Button>
           </MagneticWrapper>
           <MagneticWrapper>
-            <Button href="/research" variant="secondary">
-              Research & Writing
+            <Button href="/contact" variant="secondary">
+              Get in Touch
             </Button>
           </MagneticWrapper>
         </motion.div>

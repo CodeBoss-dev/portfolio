@@ -101,7 +101,7 @@ export function ZoomIntro() {
   const transitionTitleScale = useTransform(scrollYProgress, [0.4, 0.55], [0.9, 1]);
 
   return (
-    <div ref={containerRef} className="relative h-[350vh]">
+    <div ref={containerRef} className="relative h-[200vh]">
       <motion.div
         style={{ opacity: sceneOpacity }}
         className="sticky top-0 flex h-screen overflow-hidden"
@@ -125,7 +125,7 @@ export function ZoomIntro() {
         {/* === CENTER: Main heading === */}
         <motion.div
           style={{ opacity: headingOpacity, scale: headingScale }}
-          className="absolute inset-0 flex items-center justify-center px-6"
+          className="absolute inset-0 flex flex-col items-center justify-center px-6"
         >
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -139,6 +139,15 @@ export function ZoomIntro() {
               engineered solutions
             </span>
           </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.19, 1, 0.22, 1], delay: 0.8 }}
+            className="mt-5 max-w-md text-center text-base text-text-secondary md:text-lg"
+          >
+            I&apos;m Waaridh Borpujari. I help companies replace expensive manual processes with{" "}
+            <span className="text-text-primary">intelligent automation</span>.
+          </motion.p>
         </motion.div>
 
         {/* === BOTTOM LEFT: Scroll prompt (hidden on mobile, shown md+) === */}
