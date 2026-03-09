@@ -68,7 +68,7 @@ export function ContactPageClient() {
           className="mt-16 flex items-center justify-center gap-6"
         >
           <a
-            href="https://github.com"
+            href="https://github.com/CodeBoss-dev"
             target="_blank"
             rel="noopener noreferrer"
             data-cursor="pointer"
@@ -78,7 +78,7 @@ export function ContactPageClient() {
           </a>
           <span className="h-1 w-1 rounded-full bg-white/20" />
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/waaridh-borpujari-440845296/"
             target="_blank"
             rel="noopener noreferrer"
             data-cursor="pointer"
